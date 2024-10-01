@@ -3051,3 +3051,31 @@
 [2024-10-01T23:49:43.069+0000] {logging_mixin.py:190} INFO - [2024-10-01T23:49:43.069+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-10-01T23:49:43.080+0000] {logging_mixin.py:190} INFO - [2024-10-01T23:49:43.080+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_and_store_amazon_books to 2024-10-01 00:00:00+00:00, run_after=2024-10-02 00:00:00+00:00
 [2024-10-01T23:49:43.090+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag.py took 0.163 seconds
+[2024-10-01T23:50:13.576+0000] {processor.py:186} INFO - Started process (PID=33945) to work on /opt/airflow/dags/dag.py
+[2024-10-01T23:50:13.579+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2024-10-01T23:50:13.584+0000] {logging_mixin.py:190} INFO - [2024-10-01T23:50:13.583+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2024-10-01T23:50:13.673+0000] {processor.py:925} INFO - DAG(s) 'fetch_and_store_amazon_books' retrieved from /opt/airflow/dags/dag.py
+[2024-10-01T23:50:13.689+0000] {logging_mixin.py:190} INFO - [2024-10-01T23:50:13.689+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-01T23:50:13.700+0000] {logging_mixin.py:190} INFO - [2024-10-01T23:50:13.700+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_and_store_amazon_books to 2024-10-01 00:00:00+00:00, run_after=2024-10-02 00:00:00+00:00
+[2024-10-01T23:50:13.710+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag.py took 0.163 seconds
+[2024-10-01T23:50:44.343+0000] {processor.py:186} INFO - Started process (PID=34008) to work on /opt/airflow/dags/dag.py
+[2024-10-01T23:50:44.345+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2024-10-01T23:50:44.349+0000] {logging_mixin.py:190} INFO - [2024-10-01T23:50:44.348+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2024-10-01T23:50:44.446+0000] {processor.py:925} INFO - DAG(s) 'fetch_and_store_amazon_books' retrieved from /opt/airflow/dags/dag.py
+[2024-10-01T23:50:44.461+0000] {logging_mixin.py:190} INFO - [2024-10-01T23:50:44.461+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-01T23:50:44.475+0000] {logging_mixin.py:190} INFO - [2024-10-01T23:50:44.474+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_and_store_amazon_books to 2024-10-01 00:00:00+00:00, run_after=2024-10-02 00:00:00+00:00
+[2024-10-01T23:50:44.482+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag.py took 0.163 seconds
+[2024-10-01T23:51:14.864+0000] {processor.py:186} INFO - Started process (PID=34071) to work on /opt/airflow/dags/dag.py
+[2024-10-01T23:51:14.866+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2024-10-01T23:51:14.871+0000] {logging_mixin.py:190} INFO - [2024-10-01T23:51:14.871+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2024-10-01T23:51:14.962+0000] {processor.py:925} INFO - DAG(s) 'fetch_and_store_amazon_books' retrieved from /opt/airflow/dags/dag.py
+[2024-10-01T23:51:14.975+0000] {logging_mixin.py:190} INFO - [2024-10-01T23:51:14.975+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-01T23:51:14.989+0000] {logging_mixin.py:190} INFO - [2024-10-01T23:51:14.989+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_and_store_amazon_books to 2024-10-01 00:00:00+00:00, run_after=2024-10-02 00:00:00+00:00
+[2024-10-01T23:51:15.002+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag.py took 0.173 seconds
+[2024-10-01T23:51:45.624+0000] {processor.py:186} INFO - Started process (PID=34134) to work on /opt/airflow/dags/dag.py
+[2024-10-01T23:51:45.627+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2024-10-01T23:51:45.632+0000] {logging_mixin.py:190} INFO - [2024-10-01T23:51:45.631+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2024-10-01T23:51:45.729+0000] {processor.py:925} INFO - DAG(s) 'fetch_and_store_amazon_books' retrieved from /opt/airflow/dags/dag.py
+[2024-10-01T23:51:45.746+0000] {logging_mixin.py:190} INFO - [2024-10-01T23:51:45.746+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-01T23:51:45.765+0000] {logging_mixin.py:190} INFO - [2024-10-01T23:51:45.765+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_and_store_amazon_books to 2024-10-01 00:00:00+00:00, run_after=2024-10-02 00:00:00+00:00
+[2024-10-01T23:51:45.773+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag.py took 0.167 seconds
