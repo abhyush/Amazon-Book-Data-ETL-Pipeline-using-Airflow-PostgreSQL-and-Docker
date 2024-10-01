@@ -1,0 +1,46 @@
+This project uses Apache Airflow, Docker, and PostgreSQL to create an ETL (Extract, Transform, Load) pipeline that scrapes book data from Amazon and stores it in a PostgreSQL database.
+
+Project Breakdown:
+DAG (Directed Acyclic Graph):
+
+The Airflow DAG defines the overall workflow of the pipeline, consisting of three key tasks:
+Fetching data from Amazon (extract)
+Creating a PostgreSQL table (optional transform)
+Storing the data in PostgreSQL (load).
+Tasks:
+
+Fetching Book Data (Extract):
+
+Using the PythonOperator, the function get_amazon_data_books scrapes book data from Amazon’s search results for "data engineering books."
+It extracts information such as title, author, price, and rating using BeautifulSoup and stores it in a Pandas DataFrame.
+The data is then pushed to Airflow's XCom for use in the next tasks.
+Create PostgreSQL Table (Transform):
+
+Using PostgresOperator, a task is created to ensure that a table named books exists in the PostgreSQL database. If it doesn't exist, the table is created with fields for book title, author, price, and rating.
+Insert Data into PostgreSQL (Load):
+
+Using the PythonOperator, the function insert_book_data_into_postgres pulls the scraped book data from XCom and inserts it into the PostgreSQL table.
+This is done using the PostgresHook, which allows the script to connect to the PostgreSQL database and run SQL insert queries.
+Operators:
+
+PythonOperator: Used for custom Python functions to fetch and insert the data.
+PostgresOperator: Used for executing SQL commands, like creating the table in PostgreSQL.
+Hooks:
+
+PostgresHook: Establishes a connection to the PostgreSQL database, allowing the Airflow DAG to interact with the database.
+Workflow Dependencies:
+
+The tasks are executed in order:
+Fetch Book Data (PythonOperator): Scrapes book data from Amazon.
+Create Table (PostgresOperator): Creates the books table if it doesn’t exist.
+Insert Book Data (PythonOperator): Inserts the scraped data into the books table in PostgreSQL.
+Docker & Airflow:
+
+The entire pipeline is managed in Docker containers, where Airflow orchestrates the tasks and PostgreSQL is running as a separate container to store the data.
+Summary:
+The project automates the process of fetching book data from Amazon (extract), creating the appropriate table structure in PostgreSQL (transform), and inserting the data into the database (load). This is achieved using Airflow’s scheduling and task management capabilities, while Docker ensures that the environment is reproducible and isolated.
+
+
+
+
+
